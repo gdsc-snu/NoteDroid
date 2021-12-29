@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Notes"
+        android:icon="@drawable/ic_note"
+        android:id="@+id/noteFragment"/>
+
+    <item
+        android:title="Important Notes"
+        android:icon="@drawable/ic_heart"
+        android:id="@+id/importantNoteFragment"/>
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d6d6d6"
+    tools:context=".NoteFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:fab_colorPressed="@color/blue"
+        android:background="@color/red"
+        android:id="@+id/addFAB"
+        android:elevation="40dp"
+        android:src="@drawable/ic_baseline_add_box_24" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
