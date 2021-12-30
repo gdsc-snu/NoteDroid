@@ -28,7 +28,7 @@ class NoteFragment : Fragment() {
     }
 
     private fun openDialog() {
-        val dialog = Dialog(this)
+        val dialog = Dialog(requireActivity())
         dialog.setContentView(R.layout.add_note)
         val cancelBtn = dialog.findViewById<Button>(R.id.idBtnCancel)
         val addBtn = dialog.findViewById<Button>(R.id.idBtnAdd)
