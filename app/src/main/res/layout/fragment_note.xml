@@ -14,6 +14,7 @@
         tools:listitem="@layout/list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -22,16 +23,7 @@
         android:layout_marginBottom="16dp"
         app:fab_colorPressed="@color/blue"
         android:background="@color/red"
-        android:id="@+id/addFAB"
         android:elevation="40dp"
         android:src="@drawable/ic_baseline_add_box_24" />
-
-
-
-
-
-
-
-
 
 </RelativeLayout>
