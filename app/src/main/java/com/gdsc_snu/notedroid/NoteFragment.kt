@@ -1,31 +1,16 @@
 package com.gdsc_snu.notedroid
 
 import android.app.Dialog
-import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_note.*
 
 
-class NoteFragment : Fragment() {
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        addFAB.setOnClickListener {
-            openDialog()
-        }
-
-    }
+class NoteFragment : Fragment(R.layout.fragment_note) {
 
     private fun openDialog() {
         val dialog = Dialog(requireActivity())
@@ -38,17 +23,20 @@ class NoteFragment : Fragment() {
             dialog.dismiss()
         }
         addBtn.setOnClickListener {
-            Log.d(TAG, "Item Added Successfully")
+            Log.d("NoteFragment", "Item Added Successfully")
         }
         dialog.show()
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_note, container, false)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        addFAB.setOnClickListener {
+            openDialog()
+        }
     }
 
 }
