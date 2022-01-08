@@ -16,7 +16,8 @@
         <entry key="..\:/Users/bille/AndroidStudioProjects/NoteDroid/app/src/main/res/layout/important_note.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/NoteDroid/app/src/main/res/layout/list_item.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bille/AndroidStudioProjects/NoteDroid/app/src/main/res/menu/menu_bar.xml" value="0.20052083333333334" />
-        <entry key="app/src/main/res/layout/fragment_note.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_note.xml" value="0.33" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.3375" />
       </map>
     </option>

@@ -17,13 +17,13 @@
         android:id="@+id/addFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:fab_colorPressed="@color/blue"
         android:background="@color/red"
         android:elevation="40dp"
-        android:src="@drawable/ic_baseline_add_box_24" />
+        android:src="@drawable/ic_baseline_add_box_24"
+        app:fab_colorPressed="@color/blue" />
 
 </RelativeLayout>
