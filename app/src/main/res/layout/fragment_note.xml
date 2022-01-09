@@ -8,7 +8,7 @@
     tools:context=".NoteFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerViewNote"
+        android:id="@+id/recyclerViewNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/list_item" />
