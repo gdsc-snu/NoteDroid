@@ -65,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/NoteAddEt"
                     android:textSize="14sp"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:textColorHint="@color/white"
                     android:textColor="@color/white"/>
 
