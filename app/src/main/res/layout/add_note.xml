@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -10,7 +9,7 @@
         android:background="#454545">
 
         <TextView
-            android:id="@+id/idTVHeading"
+            android:id="@+id/idTvHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
@@ -30,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/idTVHeading">
+            android:layout_below="@id/idTvHeading">
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,9 +40,9 @@
                 android:textColorHint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TitleAddEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/TitleAddEt"
                     android:textSize="14sp"
                     android:inputType="text"
                     android:textColorHint="@color/white"
@@ -61,9 +60,9 @@
                 android:textColorHint="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/NoteAddEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/NoteAddEt"
                     android:textSize="14sp"
                     android:inputType="text"
                     android:textColorHint="@color/white"
@@ -99,20 +98,20 @@
                 android:weightSum="2">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/idBtnCancel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:id="@+id/idBtnCancel"
                     android:text="Cancel"
                     android:textAllCaps="false"
                     android:background="@drawable/custom_btn"
                     android:layout_margin="8dp"/>
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/idBtnAdd"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:id="@+id/idBtnAdd"
                     android:text="Add"
                     android:textAllCaps="false"
                     android:background="@drawable/custom_btn"

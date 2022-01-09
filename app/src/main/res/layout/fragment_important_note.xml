@@ -6,6 +6,7 @@
     tools:context=".ImportantNoteFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNoteImp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/important_note" />
