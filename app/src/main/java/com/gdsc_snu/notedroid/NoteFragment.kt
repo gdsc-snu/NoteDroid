@@ -66,8 +66,4 @@ class NoteFragment : Fragment(R.layout.fragment_note) {
 
     }
 
-//    override fun onActivityCreated(savedInstanceState: Bundle?) {
-//        super.onActivityCreated(savedInstanceState)
-//
-
 }

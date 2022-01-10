@@ -57,7 +57,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:textSize="20sp"
-            tools:text="Created On: "/>
+            android:text="Created On: "/>
 
         <TextView
             android:id="@+id/createDateTv"
@@ -69,7 +69,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:layout_marginTop="16dp"
-            tools:text="20th June, 2021"/>
+            android:text="10th January, 2022"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/markImpBtn"

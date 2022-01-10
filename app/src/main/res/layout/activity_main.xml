@@ -15,10 +15,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_bar"/>
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/main_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/bottom_nav"

@@ -38,11 +38,8 @@ class ImportantNoteItemAdapter(
 
     override fun onBindViewHolder(holder: ImportantNoteViewHolder, position: Int) {
         val currentImpNoteItem = list[position]
-
-        if(currentImpNoteItem.isImp) {
-            holder.itemView.titleTv2.text = currentImpNoteItem.title
-            holder.itemView.noteTv2.text = currentImpNoteItem.text
-        }
+        holder.itemView.titleTv2.text = currentImpNoteItem.title
+        holder.itemView.noteTv2.text = currentImpNoteItem.text
 
         holder.itemView.deleteIcon.setOnClickListener {
             viewModel.delete(currentImpNoteItem)
