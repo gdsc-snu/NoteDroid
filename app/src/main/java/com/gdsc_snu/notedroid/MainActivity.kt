@@ -15,29 +15,27 @@
 
 package com.gdsc_snu.notedroid
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
-        val navController = navHostFragment.navController
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val navController = findNavController(R.id.main_container)
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.noteFragment, R.id.importantNoteFragment))
+        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        val fragment = NoteFragment()
-
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.main_container, fragment)
-            commit()
-        }
+        bottomNavigationView.setupWithNavController(navController)
     }
-
-
 }

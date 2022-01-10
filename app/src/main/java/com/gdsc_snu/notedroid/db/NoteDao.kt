@@ -31,6 +31,6 @@ interface NoteDao {
     @Query("SELECT * FROM notes_table")
     fun getAllNotes() : LiveData<List<Note>>
 
-    @Query("SELECT * FROM notes_table WHERE isImp")
+    @Query("SELECT * FROM notes_table")
     fun getAllImportantNotes(): LiveData<List<Note>>
 }

@@ -23,10 +23,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gdsc_snu.notedroid.db.NoteDatabase
 import com.gdsc_snu.notedroid.db.NoteRepository
-import com.gdsc_snu.notedroid.recycler_view.NoteItemAdapter
+import com.gdsc_snu.notedroid.recycler_view.ImportantNoteItemAdapter
 import com.gdsc_snu.notedroid.ui.NoteViewModel
 import com.gdsc_snu.notedroid.ui.NoteViewModelFactory
-import kotlinx.android.synthetic.main.fragment_note.*
+import kotlinx.android.synthetic.main.fragment_important_note.*
 
 class ImportantNoteFragment : Fragment(R.layout.fragment_important_note) {
 
@@ -44,10 +44,10 @@ class ImportantNoteFragment : Fragment(R.layout.fragment_important_note) {
         factory = NoteViewModelFactory(repository)
         viewModel = ViewModelProvider(this, factory).get(NoteViewModel::class.java)
 
-        val adapter = NoteItemAdapter(listOf(), viewModel)
+        val adapter = ImportantNoteItemAdapter(listOf(), viewModel)
 
-        recyclerViewNote.layoutManager = LinearLayoutManager(requireContext())
-        recyclerViewNote.adapter = adapter
+        recyclerViewNoteImp.layoutManager = LinearLayoutManager(requireContext())
+        recyclerViewNoteImp.adapter = adapter
 
         viewModel.getAllImportantNoteItems().observe(viewLifecycleOwner, Observer {
             adapter.list = it

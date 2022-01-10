@@ -11,12 +11,16 @@
         android:label="fragment_note"
         tools:layout="@layout/fragment_note" >
         <action
-            android:id="@+id/action_noteFragment_to_importantNoteFragment"
+            android:id="@+id/navigateToImportantNoteFragment"
             app:destination="@id/importantNoteFragment" />
     </fragment>
     <fragment
         android:id="@+id/importantNoteFragment"
         android:name="com.gdsc_snu.notedroid.ImportantNoteFragment"
         android:label="fragment_important_note"
-        tools:layout="@layout/fragment_important_note" />
+        tools:layout="@layout/fragment_important_note" >
+        <action
+            android:id="@+id/navigateToNoteFragment"
+            app:destination="@id/noteFragment" />
+    </fragment>
 </navigation>

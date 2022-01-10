@@ -67,7 +67,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:layout_marginTop="16dp"
-            tools:text="20th June, 2021"/>
+            android:text="10th January, 2022"/>
 
         <!--<androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
